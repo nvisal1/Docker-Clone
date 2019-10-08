@@ -13,7 +13,7 @@ func main() {
 	case "run":
 		run()
 	default:
-		panic("What??")
+		panic("Invalid command.")
 	}
 }
 
