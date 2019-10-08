@@ -45,7 +45,7 @@ func child() {
 		Cloneflags: syscall.CLONE_NEWUTS,
 	}
 
-	must(syscall.Chroot(""))
+	must(syscall.Chroot("~"))
 	must(os.Chdir("/"))
 	must(syscall.Mount("proc", "proc", "proc", 0, ""))
 	must(cmd.Run())
